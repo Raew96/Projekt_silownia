@@ -11,10 +11,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity_cwiczenie extends AppCompatActivity {
 
+
     public static final String EXTRA_CWICZENIE_NR = "cwiczenieNR";
     public static final String EXTRA_POZIOM_NR = "poziomNR";
     int cwiczenieNR;
     int poziomNR;
+
     private int seconds = 0;
     private boolean running;
     private boolean wasRunning;
@@ -23,6 +25,7 @@ public class Activity_cwiczenie extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cwiczenie);
+
 
         Cwiczenie cw = null;
 
@@ -58,6 +61,7 @@ public class Activity_cwiczenie extends AppCompatActivity {
         Intent intent = new Intent(this, Activity_cwiczenie_slide.class);
         intent.putExtra(Activity_cwiczenie_slide.EXTRA_CWICZENIE_NR, cwiczenieNR);
         intent.putExtra(Activity_cwiczenie_slide.EXTRA_POZIOM_NR, poziomNR);
+
         startActivity(intent);
     }
 

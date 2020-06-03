@@ -56,12 +56,14 @@ public class HomeFragment extends Fragment {
             {
                 // do something
                 openActivity_poziom3();
+
             }
         });
 
 
         return view;
     }
+
     public void openActivity_poziom1()
     {
         Intent intent = new Intent(getActivity(), Activity_poziom_1.class);
@@ -77,8 +79,7 @@ public class HomeFragment extends Fragment {
         Intent intent = new Intent(getActivity(), Activity_poziom_3.class);
         startActivity(intent);
     }
-
-
+    
 
 
 }
